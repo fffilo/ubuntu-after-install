@@ -1,7 +1,9 @@
 #!/bin/bash
 
 clear
-echo "Clean Up"
+echo "################################"
+echo "### Clean Up ###################"
+echo "################################"
 sudo apt-get -f install
 sudo apt-get -y autoremove
 sudo apt-get -y autoclean
