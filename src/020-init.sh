@@ -2,11 +2,9 @@
 
 clear
 echo "################################"
-echo "### Git ########################"
+echo "### Timeozone ##################"
 echo "################################"
-sudo apt-get install -y git git-core 
-git config --global alias.stat "status"
-git config --global alias.hist "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+sudo timedatectl set-timezone Europe/Zagreb
 
 clear
 echo "################################"
@@ -21,3 +19,11 @@ echo "alias ...='cd ../..'" >> ~/.bashrc
 echo "alias ....='cd ../../..'" >> ~/.bashrc
 echo "alias .....='cd ../../../..'" >> ~/.bashrc
 echo "alias ......='cd ../../../../..'" >> ~/.bashrc
+
+clear
+echo "################################"
+echo "### Git ########################"
+echo "################################"
+sudo apt-get install -y git git-core 
+git config --global alias.stat "status"
+git config --global alias.hist "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
