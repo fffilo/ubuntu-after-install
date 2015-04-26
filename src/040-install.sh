@@ -10,6 +10,12 @@ sudo apt-get install -y ubuntu-tweak
 
 clear
 echo "################################"
+echo "### Nautilus Open Terminal #####"
+echo "################################"
+sudo apt-get install -y nautilus-open-terminal
+
+clear
+echo "################################"
 echo "### Compiz #####################"
 echo "################################"
 sudo apt-get install -y compiz compizconfig-settings-manager compiz-plugins dconf-editor
