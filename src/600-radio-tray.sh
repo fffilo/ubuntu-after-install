@@ -18,4 +18,5 @@ if [ ! -f ~/.config/autostart/radiotray.desktop ]; then
 	echo "Name=SystemLoadIndicator" >> ~/.config/autostart/radiotray.desktop
 	echo "Comment[en_US]=" >> ~/.config/autostart/radiotray.desktop
 	echo "Comment=" >> ~/.config/autostart/radiotray.desktop
+	/usr/bin/python /usr/bin/radiotray >/dev/null 2>&1 &
 fi

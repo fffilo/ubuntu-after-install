@@ -23,4 +23,5 @@ if [ ! -f ~/.config/autostart/my-weather-indicator.desktop ]; then
 	echo "Name=MyWeatherIndicator" >> ~/.config/autostart/my-weather-indicator.desktop
 	echo "Comment[en_US]=" >> ~/.config/autostart/my-weather-indicator.desktop
 	echo "Comment=" >> ~/.config/autostart/my-weather-indicator.desktop
+	/usr/bin/python3 /opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator >/dev/null 2>&1 &
 fi

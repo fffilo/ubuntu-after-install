@@ -23,4 +23,5 @@ if [ ! -f ~/.config/autostart/indicator-multiload.desktop ]; then
 	echo "Name=SystemLoadIndicator" >> ~/.config/autostart/indicator-multiload.desktop
 	echo "Comment[en_US]=" >> ~/.config/autostart/indicator-multiload.desktop
 	echo "Comment=" >> ~/.config/autostart/indicator-multiload.desktop
+	/usr/bin/indicator-multiload >/dev/null 2>&1 &
 fi

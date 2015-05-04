@@ -24,4 +24,5 @@ if [ ! -f ~/.config/autostart/mouse-sensitivity.desktop ]; then
 	echo "Name=SystemLoadIndicator" >> ~/.config/autostart/mouse-sensitivity.desktop
 	echo "Comment[en_US]=" >> ~/.config/autostart/mouse-sensitivity.desktop
 	echo "Comment=" >> ~/.config/autostart/mouse-sensitivity.desktop
+	/usr/bin/python /usr/share/mouse-sensitivity/src/mouse.py >/dev/null 2>&1 &
 fi
