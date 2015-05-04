@@ -1,10 +1,12 @@
 #!/bin/bash
 
+echo ""
+echo ""
 echo "################################"
 echo "### Apache #####################"
 echo "################################"
 apache2 -v >/dev/null 2>&1
-if [[ $? -eq 1 ]]; then
+if [[ $? -ne 0 ]]; then
 	sudo apt-get install -y apache2
 	sudo cp /etc/apache2/apache2.conf /etc/apache2/apache2.conf.default
 	echo "ServerName localhost" | sudo tee -a /etc/apache2/conf-available/fqdn.conf >/dev/null

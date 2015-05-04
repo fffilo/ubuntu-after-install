@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo ""
+echo ""
 echo "################################"
 echo "### Classic Menu Indicator #####"
 echo "################################"

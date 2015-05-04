@@ -1,10 +1,12 @@
 #!/bin/bash
 
+echo ""
+echo ""
 echo "################################"
 echo "### MySql ######################"
 echo "################################"
 mysql --version >/dev/null 2>&1
-if [[ $? -eq 1 ]]; then
+if [[ $? -ne 0 ]]; then
 	sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password root"
 	sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password root"
 	sudo apt-get install -y mysql-server

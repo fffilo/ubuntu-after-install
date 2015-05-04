@@ -1,10 +1,13 @@
 #!/bin/bash
 
+echo ""
+echo ""
 echo "################################"
 echo "### Radio Tray #################"
 echo "################################"
 sudo apt-get install -y radiotray
 if [ ! -f ~/.config/autostart/radiotray.desktop ]; then
+	mkdir -p ~/.config/autostart/
 	echo "[Desktop Entry]" > ~/.config/autostart/radiotray.desktop
 	echo "Type=Application" >> ~/.config/autostart/radiotray.desktop
 	echo "Exec=/usr/bin/python /usr/bin/radiotray" >> ~/.config/autostart/radiotray.desktop

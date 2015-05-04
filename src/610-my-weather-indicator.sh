@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo ""
+echo ""
 echo "################################"
 echo "### My Weather Indicator #######"
 echo "################################"
@@ -10,6 +12,7 @@ if [[ $? -eq 1 ]]; then
 	sudo apt-get install -y my-weather-indicator
 fi
 if [ ! -f ~/.config/autostart/my-weather-indicator.desktop ]; then
+	mkdir -p ~/.config/autostart/
 	echo "[Desktop Entry]" > ~/.config/autostart/my-weather-indicator.desktop
 	echo "Type=Application" >> ~/.config/autostart/my-weather-indicator.desktop
 	echo "Exec=/usr/bin/python3 /opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator" >> ~/.config/autostart/my-weather-indicator.desktop

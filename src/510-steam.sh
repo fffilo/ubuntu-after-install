@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo ""
+echo ""
 echo "################################"
 echo "### Steam ######################"
 echo "################################"
@@ -8,6 +10,6 @@ echo "################################"
 #sudo debconf-set-selections <<< "steam steam/licence note"
 #sudo apt-get install -y steam
 
-sudo add-apt-repository -y ppa:thor27-gmail/steam-desktop 
-sudo apt-get update 
+sudo add-apt-repository -y ppa:thor27-gmail/steam-desktop
+sudo apt-get update
 sudo apt-get install -y steam steam-login

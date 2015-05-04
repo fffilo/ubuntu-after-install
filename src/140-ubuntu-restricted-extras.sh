@@ -1,6 +1,7 @@
 #!/bin/bash
 
-clear
+echo ""
+echo ""
 echo "################################"
 echo "### Ubuntu restricted extras ###"
 echo "################################"

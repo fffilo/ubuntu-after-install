@@ -1,12 +1,14 @@
 #!/bin/bash
 
-clear
+echo ""
+echo ""
 echo "################################"
-echo "### Timeozone ##################"
+echo "### Timezone ###################"
 echo "################################"
 sudo timedatectl set-timezone Europe/Zagreb
 
-clear
+echo ""
+echo ""
 echo "################################"
 echo "### Aliases ####################"
 echo "################################"

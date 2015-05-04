@@ -1,10 +1,12 @@
 #!/bin/bash
 
+echo ""
+echo ""
 echo "################################"
 echo "### PHP ########################"
 echo "################################"
 php -v >/dev/null 2>&1
-if [[ $? -eq 1 ]]; then
+if [[ $? -ne 0 ]]; then
 	sudo add-apt-repository -y ppa:ondrej/php5-5.6
 	sudo apt-get update
 	sudo apt-get install -y php5 libapache2-mod-php5 php-pear php5-cli php5-curl php5-mcrypt php5-gd php5-xdebug php5-gmp php5-mysql php5-pgsql php5-sqlite

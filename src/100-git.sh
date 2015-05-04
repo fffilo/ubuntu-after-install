@@ -1,10 +1,11 @@
 #!/bin/bash
 
-clear
+echo ""
+echo ""
 echo "################################"
 echo "### Git ########################"
 echo "################################"
-sudo apt-get install -y git git-core 
+sudo apt-get install -y git git-core
 # git config --global user.name "John Doe"
 # git config --global user.email johndoe@example.com
 git config --global alias.stat "status"

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo ""
+echo ""
 echo "################################"
 echo "### System Load Indicator ######"
 echo "################################"
@@ -10,6 +12,7 @@ if [[ $? -eq 1 ]]; then
 	sudo apt-get install indicator-multiload
 fi
 if [ ! -f ~/.config/autostart/indicator-multiload.desktop ]; then
+	mkdir -p ~/.config/autostart/
 	echo "[Desktop Entry]" > ~/.config/autostart/indicator-multiload.desktop
 	echo "Type=Application" >> ~/.config/autostart/indicator-multiload.desktop
 	echo "Exec=/usr/bin/indicator-multiload" >> ~/.config/autostart/indicator-multiload.desktop

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo ""
+echo ""
 echo "################################"
 echo "### MouseSensitivity Indicator #"
 echo "################################"
@@ -11,6 +13,7 @@ if [ ! -d /usr/share/mouse-sensitivity ]; then
 	sudo chmod +x /usr/bin/mouse-sensitivity
 fi
 if [ ! -f ~/.config/autostart/mouse-sensitivity.desktop ]; then
+	mkdir -p ~/.config/autostart/
 	echo "[Desktop Entry]" > ~/.config/autostart/mouse-sensitivity.desktop
 	echo "Type=Application" >> ~/.config/autostart/mouse-sensitivity.desktop
 	echo "Exec=/usr/bin/python /usr/share/mouse-sensitivity/src/mouse.py" >> ~/.config/autostart/mouse-sensitivity.desktop
