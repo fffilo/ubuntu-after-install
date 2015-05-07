@@ -14,9 +14,9 @@ if [[ $? -ne 0 ]]; then
 	sudo a2enmod rewrite
 	sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.conf.default
 	echo "<VirtualHost *:80>" | sudo tee /etc/apache2/sites-available/000-default.conf >/dev/null
-	echo "    DocumentRoot /storage/dev/www" | sudo tee -a /etc/apache2/sites-available/000-default.conf >/dev/null
+	echo "    DocumentRoot /media/storage/dev/www" | sudo tee -a /etc/apache2/sites-available/000-default.conf >/dev/null
 	echo "    ServerAdmin webmaster@localhost" | sudo tee -a /etc/apache2/sites-available/000-default.conf >/dev/null
-	echo "    <Directory /storage/dev/www>" | sudo tee -a /etc/apache2/sites-available/000-default.conf >/dev/null
+	echo "    <Directory /media/storage/dev/www>" | sudo tee -a /etc/apache2/sites-available/000-default.conf >/dev/null
 	echo "        Options Indexes FollowSymLinks MultiViews" | sudo tee -a /etc/apache2/sites-available/000-default.conf >/dev/null
 	echo "        AllowOverride All" | sudo tee -a /etc/apache2/sites-available/000-default.conf >/dev/null
 	echo "        Allow From All" | sudo tee -a /etc/apache2/sites-available/000-default.conf >/dev/null

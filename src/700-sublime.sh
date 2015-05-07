@@ -48,4 +48,7 @@ if [[ $? -eq 1 ]]; then
 	unzip /tmp/SublimeLinter3.zip -d /tmp
 	mv /tmp/SublimeLinter3-master ~/.config/sublime-text-3/Packages/SublimeLinter
 	rm /tmp/SublimeLinter3.zip
+
+	# Open Terminal
+	git clone https://github.com/fffilo/OpenTerminal.git ~/.config/sublime-text-3/Packages/OpenTerminal
 fi
