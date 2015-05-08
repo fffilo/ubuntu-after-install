@@ -6,6 +6,11 @@ echo "################################"
 echo "### Timezone ###################"
 echo "################################"
 sudo timedatectl set-timezone Europe/Zagreb
+gsettings set com.canonical.indicator.datetime show-date true
+gsettings set com.canonical.indicator.datetime show-day true
+gsettings set com.canonical.indicator.datetime show-seconds true
+gsettings set com.canonical.indicator.datetime show-week-numbers true
+gsettings set com.canonical.indicator.datetime show-year true
 
 echo ""
 echo ""
