@@ -22,12 +22,12 @@ if [[ $? -eq 1 ]]; then
 	# Package Control
 	wget -O ~/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package https://packagecontrol.io/Package%20Control.sublime-package
 
-	# Emmet
-	wget -O /tmp/Emmet.zip https://github.com/sergeche/emmet-sublime/archive/master.zip
-	unzip /tmp/Emmet.zip -d /tmp
-	(cd /tmp/emmet-sublime-master/; zip -r ~/.config/sublime-text-3/Installed\ Packages/Emmet.sublime-package *)
-	rm /tmp/Emmet.zip
-	rm -rf /tmp/emmet-sublime-master
+	# Theme Afterglow
+	wget -O /tmp/afterglow-theme.zip https://github.com/YabataDesign/afterglow-theme/archive/master.zip
+	unzip /tmp/afterglow-theme.zip -d /tmp
+	(cd /tmp/afterglow-theme-master/; zip -r ~/.config/sublime-text-3/Installed\ Packages/Theme\ \-\ Afterglow.sublime-package *)
+	rm /tmp/afterglow-theme.zip
+	rm -rf /tmp/afterglow-theme-master
 
 	# SyncedSideBar
 	wget -O /tmp/SyncedSideBar.zip https://github.com/sobstel/SyncedSideBar/archive/master.zip
@@ -36,18 +36,29 @@ if [[ $? -eq 1 ]]; then
 	rm /tmp/SyncedSideBar.zip
 	rm -rf /tmp/SyncedSideBar-master
 
-	# Theme Afterglow
-	wget -O /tmp/afterglow-theme.zip https://github.com/YabataDesign/afterglow-theme/archive/master.zip
-	unzip /tmp/afterglow-theme.zip -d /tmp
-	(cd /tmp/afterglow-theme-master/; zip -r ~/.config/sublime-text-3/Installed\ Packages/Theme\ \-\ Afterglow.sublime-package *)
-	rm /tmp/afterglow-theme.zip
-	rm -rf /tmp/afterglow-theme-master
+	# SideBarEnhancements
+
+	# Alignment
+
+	# Emmet
+	wget -O /tmp/Emmet.zip https://github.com/sergeche/emmet-sublime/archive/master.zip
+	unzip /tmp/Emmet.zip -d /tmp
+	(cd /tmp/emmet-sublime-master/; zip -r ~/.config/sublime-text-3/Installed\ Packages/Emmet.sublime-package *)
+	rm /tmp/Emmet.zip
+	rm -rf /tmp/emmet-sublime-master
 
 	# Sublime Linter
 	wget -O /tmp/SublimeLinter3.zip https://github.com/SublimeLinter/SublimeLinter3/archive/master.zip
 	unzip /tmp/SublimeLinter3.zip -d /tmp
 	mv /tmp/SublimeLinter3-master ~/.config/sublime-text-3/Packages/SublimeLinter
 	rm /tmp/SublimeLinter3.zip
+
+	# DocBlockr
+	wget -O /tmp/DocBlockr.zip https://github.com/spadgos/sublime-jsdocs/archive/master.zip
+	unzip /tmp/DocBlockr.zip -d /tmp
+	(cd /tmp/sublime-jsdocs-master/; zip -r ~/.config/sublime-text-3/Installed\ Packages/DocBlockr.sublime-package *)
+	rm /tmp/DocBlockr.zip
+	rm -rf /tmp/sublime-jsdocs-master
 
 	# Open Terminal
 	git clone https://github.com/fffilo/OpenTerminal.git ~/.config/sublime-text-3/Packages/OpenTerminal
